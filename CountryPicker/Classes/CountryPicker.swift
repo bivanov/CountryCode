@@ -114,9 +114,6 @@ open class CountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSo
 
         self.selectRow(row, inComponent: 0, animated: true)
         let country = countries[row]
-        if let countryPickerDelegate = countryPickerDelegate {
-            countryPickerDelegate.countryPhoneCodePicker(self, didSelectCountryWithName: country.name!, countryCode: country.code!, phoneCode: country.phoneCode!, flag: country.flag!)
-        }
     }
 
     /// setCountryByPhoneCode
